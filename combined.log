@@ -1,0 +1,77 @@
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"debug","message":"Debugging test","service":"user-service"}
+{"level":"info","message":"Starting points of interest application! :-)","service":"user-service"}
+{"level":"debug","message":"Debugging test","service":"user-service"}
+2019-11-18T18:30:33.773Z [This is a warning dog] error: This is a mistake
+2019-11-18T18:30:33.775Z [This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T18:30:33.776Z [This is a warning dog] debug: Debugging test
+2019-11-18T18:32:04.218Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T18:32:04.221Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T18:32:04.221Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T18:35:31.655Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:24:14.178Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:24:14.181Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:24:14.181Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:30:37.925Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:30:37.929Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:30:37.930Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:31:52.021Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:31:52.024Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:31:52.024Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:52:26.906Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:52:26.909Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:52:26.909Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:56:19.570Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:56:19.573Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:56:19.573Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:56:24.474Z [Main: This is a warning dog] debug: {"query":"pontevedra"}
+2019-11-18T19:57:09.826Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T19:57:09.829Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T19:57:09.829Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T19:57:19.063Z [Main: This is a warning dog] debug: {"state":"pontevedra"}
+2019-11-18T19:57:24.212Z [Main: This is a warning dog] debug: {"state":"ourense"}
+2019-11-18T19:57:29.355Z [Main: This is a warning dog] debug: {"state":"pontevedra"}
+2019-11-18T20:09:11.887Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:09:11.890Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:09:11.890Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:09:17.233Z [Main: This is a warning dog] debug: {"state":"pontevedra"}
+2019-11-18T20:09:20.262Z [Main: This is a warning dog] debug: {"state":"puu"}
+2019-11-18T20:09:23.261Z [Main: This is a warning dog] debug: {}
+2019-11-18T20:09:55.546Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:09:55.548Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:09:55.548Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:09:58.817Z [Main: This is a warning dog] debug: {}
+2019-11-18T20:10:56.961Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:10:56.963Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:10:56.963Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:11:01.495Z [Main: This is a warning dog] debug: {}
+2019-11-18T20:11:21.107Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:11:21.109Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:11:21.110Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:11:24.374Z [Main: This is a warning dog] debug: {}
+2019-11-18T20:13:19.465Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:13:19.467Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:13:19.467Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:13:23.638Z [Main: This is a warning dog] debug: {}
+2019-11-18T20:27:38.347Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:27:38.350Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:27:38.350Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:29:04.457Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:29:04.459Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:29:04.460Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:29:30.660Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:29:30.663Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:29:30.663Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:31:07.642Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:31:07.645Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:31:07.645Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:33:26.794Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:33:26.796Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:33:26.796Z [Main: This is a warning dog] debug: Debugging test
+2019-11-18T20:33:58.523Z [Main: This is a warning dog] error: This is a mistake
+2019-11-18T20:33:58.526Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-18T20:33:58.526Z [Main: This is a warning dog] debug: Debugging test
