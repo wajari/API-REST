@@ -6,7 +6,7 @@ const winston = require('winston');
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf } = format;
 
-const url2019 = 'https://abertos.xunta.gal/catalogo/cultura-ocio-deporte/-/dataset/0401/praias-galegas-con-bandeira-azul-2019/001/descarga-directa-ficheiro.csv'
+const url = 'https://abertos.xunta.gal/catalogo/cultura-ocio-deporte/-/dataset/0401/praias-galegas-con-bandeira-azul-2019/001/descarga-directa-ficheiro.csv'
 
 const myFormat = printf(({ level, message, label, timestamp }) => {
     return `${timestamp} [${label}] ${level}: ${message}`;
@@ -29,6 +29,38 @@ const logger = winston.createLogger({
 });
 
 const app = express();
+let lastUpdate = 0; 
+let beaches = []; 
+
+app.get('/beaches', async (req, res) => {
+
+    let currentDate = new Date();
+
+    if (currentDate - lastUpdate > 10000) {
+        lastUpdate = currentDate;
+
+        const response = await axios.get(url);
+
+        logger.log({
+            level: 'debug',
+            message: 'Acabo de recibir una petición de playas'
+        });
+
+        parse(response.data, {
+            trim: true,
+            skip_empty_lines: true,
+            delimiter: ';',
+            columns: true
+        },
+        function (err, result) {
+            beaches = result;
+            res.send(result);
+        })
+    } else {
+        res.send(beaches);
+    }
+
+});
 
 app.get('/students', function (req, res) {
     res.send('datos del endpoint students');
@@ -74,22 +106,5 @@ logger.log({
     message: 'Debugging test'
 });
 
-axios.get(url2019).then(response => {
-    
-    parse(response.data, {
-        trim: true,
-        skip_empty_lines: true,
-        delimiter: ';',
-        columns: true
-    },
-        function (err, result) {
-            console.log(result.length);
-        })
-        .catch((err) => {
-            console.log('Error: ', err.errno)
-        })
-        // app.get('/maps', function (req, res) {
-        //     res.send(response.data); 
-        // }); 
-}); 
+
 
