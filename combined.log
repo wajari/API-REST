@@ -127,3 +127,38 @@
 2019-11-19T19:38:19.368Z [Main: This is a warning dog] info: Starting points of interest application! :-)
 2019-11-19T19:38:19.368Z [Main: This is a warning dog] debug: Debugging test
 2019-11-19T19:38:23.159Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas
+2019-11-19T20:11:01.490Z [Main: This is a warning dog] error: This is a mistake
+2019-11-19T20:11:01.493Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-19T20:11:01.493Z [Main: This is a warning dog] debug: Debugging test
+2019-11-19T20:11:17.118Z [Main: This is a warning dog] debug: {}
+2019-11-19T20:22:09.187Z [Main: This is a warning dog] error: This is a mistake
+2019-11-19T20:22:09.190Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-19T20:22:09.190Z [Main: This is a warning dog] debug: Debugging test
+2019-11-19T20:24:24.537Z [Main: This is a warning dog] error: This is a mistake
+2019-11-19T20:24:24.540Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-19T20:24:24.540Z [Main: This is a warning dog] debug: Debugging test
+2019-11-19T20:27:46.581Z [Main: This is a warning dog] error: This is a mistake
+2019-11-19T20:27:46.584Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-19T20:27:46.584Z [Main: This is a warning dog] debug: Debugging test
+2019-11-19T20:27:51.498Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas
+2019-11-19T20:30:23.029Z [Main: This is a warning dog] error: This is a mistake
+2019-11-19T20:30:23.031Z [Main: This is a warning dog] info: Starting points of interest application! :-)
+2019-11-19T20:30:23.032Z [Main: This is a warning dog] debug: Debugging test
+2019-11-19T20:30:36.565Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false)
+2019-11-19T20:30:49.290Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:51.989Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:53.653Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:54.934Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:55.837Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:56.297Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:57.140Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:30:59.804Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true)
+2019-11-19T20:31:18.551Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false)
+2019-11-20T17:46:52.024Z [Main: This is a warning dog] info: Starting points of interest application
+2019-11-20T17:47:08.128Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-20T17:47:10.284Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true
+2019-11-20T17:55:41.583Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-20T18:00:37.633Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-20T18:36:46.319Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-20T19:34:13.805Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-20T19:34:19.929Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false

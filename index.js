@@ -1,12 +1,14 @@
 const axios = require('axios');
+const axiosCacheAdapter = require('axios-cache-adapter'); 
 const express = require('express');
 const parse = require('csv-parse'); 
 const winston = require('winston'); 
+const config = require('./config.json')
 
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf } = format;
 
-const url = 'https://abertos.xunta.gal/catalogo/cultura-ocio-deporte/-/dataset/0401/praias-galegas-con-bandeira-azul-2019/001/descarga-directa-ficheiro.csv'
+const url = config['url']; 
 
 const myFormat = printf(({ level, message, label, timestamp }) => {
     return `${timestamp} [${label}] ${level}: ${message}`;
@@ -28,39 +30,31 @@ const logger = winston.createLogger({
 
 });
 
+const api = axiosCacheAdapter.setup({
+    baseURL: 'https://abertos.xunta.gal',
+    cache: {
+        maxAge: 0.5 * 60 * 1000
+    }
+})
+
 const app = express();
-let lastUpdate = 0; 
-let beaches = []; 
 
 app.get('/beaches', async (req, res) => {
+    const response = await api.get('/catalogo/cultura-ocio-deporte/-/dataset/0401/praias-galegas-con-bandeira-azul-2019/001/descarga-directa-ficheiro.csv');
 
-    let currentDate = new Date();
+    logger.debug(`Acabo de recibir una petición de playas (cached: ${response.request.fromCache === true}`);
 
-    if (currentDate - lastUpdate > 10000) {
-        lastUpdate = currentDate;
-
-        const response = await axios.get(url);
-
-        logger.log({
-            level: 'debug',
-            message: 'Acabo de recibir una petición de playas'
-        });
-
-        parse(response.data, {
-            trim: true,
-            skip_empty_lines: true,
-            delimiter: ';',
-            columns: true
-        },
+    parse(response.data, {
+        trim: true,
+        skip_empty_lines: true,
+        delimiter: ';',
+        columns: true
+    },
         function (err, result) {
             beaches = result;
             res.send(result);
         })
-    } else {
-        res.send(beaches);
-    }
-
-});
+}); 
 
 app.get('/students', function (req, res) {
     res.send('datos del endpoint students');
@@ -69,11 +63,6 @@ app.get('/students', function (req, res) {
 app.get('/', function (req, res) {
 
     const state = req.query['state'];
-
-    logger.log({
-        level: 'debug',
-        message: JSON.stringify(req.query)
-    });
 
     if (state === undefined) {
         res.status(400).send('Falta un parámetro');
@@ -87,24 +76,11 @@ app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
+app.listen(config['port'], function () {
+    logger.info(`Starting points of interest application on port ${config['port']}`);
 });
 
-logger.log({
-    level: 'error', 
-    message: 'This is a mistake'
-}); 
 
-logger.log({
-    level: 'info',
-    message: 'Starting points of interest application! :-)'
-  });
-
-logger.log({
-    level: 'debug',
-    message: 'Debugging test'
-});
 
 
 
