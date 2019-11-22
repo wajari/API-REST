@@ -27,7 +27,6 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: 'combined.log' }),
         new winston.transports.Console({ format: winston.format.simple() })
     ]
-
 });
 
 const api = axiosCacheAdapter.setup({
@@ -35,6 +34,21 @@ const api = axiosCacheAdapter.setup({
         maxAge: 0.5 * 60 * 1000
     }
 })
+
+const csvToObject = (data, delimiter) => {
+    return new Promise((resolve, reject) => {
+
+        parse(data, {
+            trim: true,
+            skip_empty_lines: true,
+            delimiter: delimiter,
+            columns: true
+        },
+            function (err, result) {
+                resolve(result);
+            });
+    })
+} 
 
 const app = express();
 
@@ -55,15 +69,10 @@ app.get('/beaches/', async (req, res) => {
 
     logger.debug(`Acabo de recibir una petición de playas (cached: ${response.request.fromCache === true}`);
 
-    parse(response.data, {
-        trim: true,
-        skip_empty_lines: true,
-        delimiter: ';',
-        columns: true
-    },
+    const result = await csvToObject(response.data, ";")
+    res.send(result);
 
-    function (err, result) {
-        const state = req.query['state'];
+    const state = req.query['state'];
 
         if (state !== undefined) {
             const filteredData = result.filter((item) => item['C�DIGO PROVINCIA'] === state);
@@ -76,9 +85,26 @@ app.get('/beaches/', async (req, res) => {
         } else {
             res.send(result);
         }
+});
 
-    })
+app.get('/casas', async (req, res) => {
 
+    const casas = config.get(`resources.casas`);
+    const response = await api.get(casas);
+
+    const result = await csvToObject(response.data, ",")
+    res.send(result);
+
+});
+
+app.get('/teatros', async (req, res) => {
+
+    const teatros = config.get(`resources.teatros`);
+    const response = await api.get(teatros);
+
+    const result = await csvToObject(response.data, ";")
+    res.send(result);
+    
 });
 
 app.get('/students', function (req, res) {

@@ -255,3 +255,25 @@
 2019-11-21T19:57:56.242Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true
 2019-11-21T19:58:00.885Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true
 2019-11-21T19:58:05.957Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-21T20:11:37.962Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:13:13.108Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:15:19.635Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:17:09.554Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:19:11.049Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:20:18.314Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:21:21.994Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:22:00.632Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:22:47.549Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:23:32.243Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:27:16.306Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:30:16.402Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:32:06.300Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-21T20:34:11.560Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T17:32:50.080Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T17:34:29.531Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T17:36:54.437Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T17:38:43.066Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T18:56:02.446Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T19:20:10.246Z [Main: This is a warning dog] info: Starting points of interest application on port 3000
+2019-11-22T19:20:44.783Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: false
+2019-11-22T19:20:49.170Z [Main: This is a warning dog] debug: Acabo de recibir una petición de playas (cached: true
